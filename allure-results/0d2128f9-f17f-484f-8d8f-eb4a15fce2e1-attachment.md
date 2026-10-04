@@ -1,0 +1,511 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Expect_PopUp_Hover_Frames.spec.js >> @Web Popup validations
+- Location: tests\Expect_PopUp_Hover_Frames.spec.js:3:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - link:
+      - /url: https://www.rahulshettyacademy.com/
+      - img [ref=e3] [cursor=pointer]
+    - link "🎯 I’ll help you prepare for your next QA job — Explore the QA Career Accelerator." [ref=e4] [cursor=pointer]:
+      - /url: https://rahulshettyacademy.com/qa-career-accelerator-job-ready
+    - generic [ref=e5]:
+      - link [ref=e6] [cursor=pointer]:
+        - /url: https://www.rahulshettyacademy.com/
+        - button "Home" [ref=e7]
+      - button "Practice" [ref=e8] [cursor=pointer]
+      - button "Login" [ref=e9] [cursor=pointer]
+      - button "Signup" [ref=e10] [cursor=pointer]
+  - heading "Practice Page" [level=1] [ref=e11]
+  - generic [ref=e12]:
+    - group "Radio Button Example" [ref=e14]:
+      - generic [ref=e16] [cursor=pointer]:
+        - radio [ref=e17]
+        - text: Radio1
+      - generic [ref=e18] [cursor=pointer]:
+        - radio [ref=e19]
+        - text: Radio2
+      - generic [ref=e20] [cursor=pointer]:
+        - radio [ref=e21]
+        - text: Radio3
+    - group "Suggession Class Example" [ref=e23]:
+      - textbox "Type to Select Countries" [ref=e25]
+    - group "Dropdown Example" [ref=e27]:
+      - combobox [ref=e29]:
+        - option "Select" [selected]
+        - option "Option1"
+        - option "Option2"
+        - option "Option3"
+    - group "Checkbox Example" [ref=e31]:
+      - generic [ref=e33] [cursor=pointer]:
+        - checkbox [ref=e34]
+        - text: Option1
+      - generic [ref=e35] [cursor=pointer]:
+        - checkbox [ref=e36]
+        - text: Option2
+      - generic [ref=e37] [cursor=pointer]:
+        - checkbox [ref=e38]
+        - text: Option3
+  - generic [ref=e39]:
+    - group "Switch Window Example" [ref=e41]:
+      - button "Open Window" [ref=e43] [cursor=pointer]
+    - group "Switch Tab Example" [ref=e45]:
+      - link "Open Tab" [ref=e47] [cursor=pointer]:
+        - /url: https://www.qaclickacademy.com
+    - group "Switch To Alert Example" [ref=e49]:
+      - textbox "Enter Your Name" [ref=e51]
+      - button "Alert" [ref=e52] [cursor=pointer]
+      - button "Confirm" [active] [ref=e53] [cursor=pointer]
+  - generic [ref=e54]:
+    - group "Web Table Example" [ref=e56]:
+      - table [ref=e58]:
+        - rowgroup [ref=e59]:
+          - row [ref=e60]:
+            - columnheader "Instructor" [ref=e61]
+            - columnheader "Course" [ref=e62]
+            - columnheader "Price" [ref=e63]
+          - row [ref=e64]:
+            - cell "Rahul Shetty" [ref=e65]
+            - cell "Selenium Webdriver with Java Basics + Advanced + Interview Guide" [ref=e66]
+            - cell "30" [ref=e67]
+          - row [ref=e68]:
+            - cell "Rahul Shetty" [ref=e69]
+            - cell "Learn SQL in Practical + Database Testing from Scratch" [ref=e70]
+            - cell "25" [ref=e71]
+          - row [ref=e72]:
+            - cell "Rahul Shetty" [ref=e73]
+            - cell "Appium (Selenium) - Mobile Automation Testing from Scratch" [ref=e74]
+            - cell "30" [ref=e75]
+          - row [ref=e76]:
+            - cell "Rahul Shetty" [ref=e77]
+            - cell "WebSecurity Testing for Beginners-QA knowledge to next level" [ref=e78]
+            - cell "20" [ref=e79]
+          - row [ref=e80]:
+            - cell "Rahul Shetty" [ref=e81]
+            - cell "Learn JMETER from Scratch - (Performance + Load) Testing Tool" [ref=e82]
+            - cell "25" [ref=e83]
+          - row [ref=e84]:
+            - cell "Rahul Shetty" [ref=e85]
+            - cell "WebServices / REST API Testing with SoapUI" [ref=e86]
+            - cell "35" [ref=e87]
+          - row [ref=e88]:
+            - cell "Rahul Shetty" [ref=e89]
+            - cell "QA Expert Course :Software Testing + Bugzilla + SQL + Agile" [ref=e90]
+            - cell "25" [ref=e91]
+          - row [ref=e92]:
+            - cell "Rahul Shetty" [ref=e93]
+            - cell "Master Selenium Automation in simple Python Language" [ref=e94]
+            - cell "25" [ref=e95]
+          - row [ref=e96]:
+            - cell "Rahul Shetty" [ref=e97]
+            - cell "Advanced Selenium Framework Pageobject, TestNG, Maven, Jenkins,C" [ref=e98]
+            - cell "20" [ref=e99]
+          - row [ref=e100]:
+            - cell "Rahul Shetty" [ref=e101]
+            - cell "Write effective QA Resume that will turn to interview call" [ref=e102]
+            - cell "0" [ref=e103]
+    - generic [ref=e104]:
+      - group "Element Displayed Example" [ref=e105]:
+        - button "Hide" [ref=e107] [cursor=pointer]
+        - button "Show" [ref=e108] [cursor=pointer]
+      - group "Web Table Fixed header" [ref=e109]:
+        - table [ref=e112]:
+          - rowgroup [ref=e113]:
+            - row [ref=e114]:
+              - columnheader "Name" [ref=e115]
+              - columnheader "Position" [ref=e116]
+              - columnheader "City" [ref=e117]
+              - columnheader "Amount" [ref=e118]
+          - rowgroup [ref=e119]:
+            - row [ref=e120]:
+              - cell "Alex" [ref=e121]
+              - cell "Engineer" [ref=e122]
+              - cell "Chennai" [ref=e123]
+              - cell "28" [ref=e124]
+            - row [ref=e125]:
+              - cell "Ben" [ref=e126]
+              - cell "Mechanic" [ref=e127]
+              - cell "Bengaluru" [ref=e128]
+              - cell "23" [ref=e129]
+            - row [ref=e130]:
+              - cell "Dwayne" [ref=e131]
+              - cell "Manager" [ref=e132]
+              - cell "Kolkata" [ref=e133]
+              - cell "48" [ref=e134]
+            - row [ref=e135]:
+              - cell "Ivory" [ref=e136]
+              - cell "Receptionist" [ref=e137]
+              - cell "Chennai" [ref=e138]
+              - cell "18" [ref=e139]
+            - row [ref=e140]:
+              - cell "Jack" [ref=e141]
+              - cell "Engineer" [ref=e142]
+              - cell "Pune" [ref=e143]
+              - cell "32" [ref=e144]
+            - row [ref=e145]:
+              - cell "Joe" [ref=e146]
+              - cell "Postman" [ref=e147]
+              - cell "Chennai" [ref=e148]
+              - cell "46" [ref=e149]
+            - row [ref=e150]:
+              - cell "Raymond" [ref=e151]
+              - cell "Businessman" [ref=e152]
+              - cell "Mumbai" [ref=e153]
+              - cell "37" [ref=e154]
+            - row [ref=e155]:
+              - cell "Ronaldo" [ref=e156]
+              - cell "Sportsman" [ref=e157]
+              - cell "Chennai" [ref=e158]
+              - cell "31" [ref=e159]
+            - row [ref=e160]:
+              - cell "Smith" [ref=e161]
+              - cell "Cricketer" [ref=e162]
+              - cell "Delhi" [ref=e163]
+              - cell "33" [ref=e164]
+        - generic [ref=e165]: "Total Amount Collected: 296"
+  - group "Mouse Hover Example" [ref=e168]:
+    - generic [ref=e170]:
+      - button "Mouse Hover" [ref=e171] [cursor=pointer]
+      - generic [ref=e172]:
+        - link "Top" [ref=e173] [cursor=pointer]:
+          - /url: "#top"
+        - link "Reload" [ref=e174] [cursor=pointer]:
+          - /url: ""
+  - group "iFrame Example" [ref=e176]:
+    - iframe [ref=e178]:
+      - generic [ref=f1e2]:
+        - banner [ref=f1e3]:
+          - generic [ref=f1e6]:
+            - generic [ref=f1e7]:
+              - generic [ref=f1e8]:
+                - text: Get
+                - link "30% OFF on Silver and Platinum Packages" [ref=f1e9] [cursor=pointer]:
+                  - /url: lifetime-access
+                - text: .
+              - text: Use coupon RAHULSHETTY21051 at checkout.OFFER ends this Sunday
+              - generic [ref=f1e10]: 2d 7h 58m 39s
+            - generic [ref=f1e11] [cursor=pointer]: ×
+          - generic [ref=f1e14]:
+            - list [ref=f1e16]:
+              - listitem [ref=f1e17]:
+                - generic [ref=f1e18]: 
+                - text: contact@rahulshettyacademy.com
+            - generic [ref=f1e19]:
+              - list [ref=f1e20]:
+                - listitem [ref=f1e21]:
+                  - link "" [ref=f1e22] [cursor=pointer]:
+                    - /url: https://www.youtube.com/channel/UCgx5SDcUQWCQ_1CNneQzCRw
+                - listitem [ref=f1e24]:
+                  - link "" [ref=f1e25] [cursor=pointer]:
+                    - /url: https://linkedin.com/in/rahul-shetty-trainer/
+              - link " Register" [ref=f1e28] [cursor=pointer]:
+                - /url: https://courses.rahulshettyacademy.com/sign_up
+                - generic [ref=f1e29]: 
+                - text: Register
+              - link " Login" [ref=f1e31] [cursor=pointer]:
+                - /url: https://courses.rahulshettyacademy.com/sign_in
+                - generic [ref=f1e32]: 
+                - text: Login
+          - generic [ref=f1e35]:
+            - link [ref=f1e38] [cursor=pointer]:
+              - /url: /
+            - navigation [ref=f1e40]:
+              - list [ref=f1e42]:
+                - listitem [ref=f1e43]:
+                  - link "Home" [ref=f1e44] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=f1e45]:
+                  - link "Courses" [ref=f1e46] [cursor=pointer]:
+                    - /url: https://courses.rahulshettyacademy.com/courses
+                - listitem [ref=f1e47]:
+                  - link "NEW All Access plan" [ref=f1e48] [cursor=pointer]:
+                    - /url: lifetime-access
+                - listitem [ref=f1e49]:
+                  - link "NEW Learning paths" [ref=f1e50] [cursor=pointer]:
+                    - /url: learning-path
+                - listitem [ref=f1e51]:
+                  - link "Mentorship" [ref=f1e52] [cursor=pointer]:
+                    - /url: mentorship
+                - listitem [ref=f1e53]:
+                  - link "Job Support" [ref=f1e54] [cursor=pointer]:
+                    - /url: consulting
+                - listitem [ref=f1e55]:
+                  - link "Practice" [ref=f1e56] [cursor=pointer]:
+                    - /url: practice-project
+                - listitem [ref=f1e57]:
+                  - link "Blog" [ref=f1e58] [cursor=pointer]:
+                    - /url: https://rahulshettyacademy.com/blog/
+                - listitem [ref=f1e59]:
+                  - link "More " [ref=f1e60] [cursor=pointer]:
+                    - /url: "#"
+                    - text: More
+                    - generic [ref=f1e61]: 
+                  - text: 
+        - generic [ref=f1e62]:
+          - generic [ref=f1e67]:
+            - img "First slide" [ref=f1e68]
+            - generic [ref=f1e70]:
+              - heading [level=2] [ref=f1e71]:
+                - generic [ref=f1e72]:
+                  - text: An Academy to
+                  - strong [ref=f1e73]: Learn Earn & Shine
+                  - text: in your QA Career
+              - heading "World-class tutorials on Selenium, Rest Assured, Cypress, Appium, Postman, Cucumber, SoapUI, Playwright, Jmeter, Jira, and many more. Join our courses now to get the best job opportunity." [level=3] [ref=f1e74]
+              - link "JOIN NOW" [ref=f1e76] [cursor=pointer]:
+                - /url: https://courses.rahulshettyacademy.com/sign_up
+          - generic [ref=f1e80]:
+            - generic [ref=f1e82]:
+              - generic [ref=f1e83]: 
+              - generic [ref=f1e85]: 600,000 +
+              - heading "Students" [level=4] [ref=f1e86]
+            - generic [ref=f1e88]:
+              - generic [ref=f1e89]: 
+              - generic [ref=f1e91]: 30 +
+              - heading "Courses" [level=4] [ref=f1e92]
+            - generic [ref=f1e94]:
+              - generic [ref=f1e95]: 
+              - generic [ref=f1e97]: 257,000 +
+              - heading "Ratings" [level=4] [ref=f1e98]
+            - generic [ref=f1e100]:
+              - generic [ref=f1e101]: 
+              - generic [ref=f1e103]: 30 +
+              - heading "Projects" [level=4] [ref=f1e104]
+          - generic [ref=f1e107]:
+            - heading "why we are Leaders in market?!" [level=2] [ref=f1e108]
+            - generic [ref=f1e109]:
+              - list [ref=f1e111]:
+                - listitem [ref=f1e112]: The academy is led by Rahul Shetty, a Test evangelist and Test architect with over 10+ years in the IT industry.
+                - listitem [ref=f1e113]: Rahul Shetty is a pioneer and authority in software testing space.
+                - listitem [ref=f1e114]: He has taught over 300,000 students in 195 countries from across the world.
+                - listitem [ref=f1e115]: All our courses are based on Real Time Project based where you learn real skill which are readily transferable to your work project.
+                - listitem [ref=f1e116]: Our courses are guaranteed to help you reach your career goals and develop your automation skills
+                - listitem [ref=f1e117]: Life time access, Learn at your own pace and updates are Free for Life.
+              - list [ref=f1e119]:
+                - listitem [ref=f1e120]: Wide coverage of topics like Selenium, Appium, Cucumber BDD, Cypress, Protractor, RestAPI, SoapUI and JMeter etc.
+                - listitem [ref=f1e121]: His mentorship program is most after in the software testing community with long waiting period.
+                - listitem [ref=f1e122]: Once under his mentorship, you are preparing yourself for long term success with his expert guidance and support.
+                - listitem [ref=f1e123]: Lot of companies have already benefited from our consulting services.
+                - listitem [ref=f1e124]: We are essentially a Full Stack QA consulting and Training company and we got you covered for your test implementation and training needs.
+          - generic [ref=f1e126]:
+            - generic [ref=f1e127]:
+              - heading "Our Students" [level=2] [ref=f1e128]
+              - generic [ref=f1e129]: See what our students say about us. We are proud to show some of best feedback with lot of love & proud!!
+            - generic [ref=f1e130]:
+              - generic [ref=f1e132]:
+                - generic [ref=f1e136]:
+                  - text: 
+                  - heading "Zubair Rowley" [level=4] [ref=f1e137]
+                  - generic [ref=f1e138]: Student of software testing
+                  - generic [ref=f1e139]: Guys, I was a Nervous newbie in this software testing few days ago, but by just completing my 50% course, I am now confident becoz of knowledge shared by Rahul shetty sir, that i will crack the job of Software Test Engineer. I was 0 in Technical field, but now i can say i have some rare knowledge which will help me to deal with my goals and challenges in testing. Trying my level best to explore more n more in testing due to CURIOSITY ABOUT SOFTWARE TESTING created in my mind by Rahul sir's Guidance.Thank You sir.
+                  - generic [ref=f1e140]:
+                    - generic [ref=f1e141]: 
+                    - generic [ref=f1e142]: 
+                    - generic [ref=f1e143]: 
+                    - generic [ref=f1e144]: 
+                    - generic [ref=f1e145]: 
+                - generic [ref=f1e149]:
+                  - text: 
+                  - heading "Sania Wynn" [level=4] [ref=f1e150]
+                  - generic [ref=f1e151]: student of selenium
+                  - generic [ref=f1e152]: I am so glad I found the right course and the right instructor. The instructor is too good..knowledgeable and supportive. I always get replies on my queries within hours and that helps me become productive. And this shows the dedication of the instructor as well. Very commendable and exceptional and elaborate teaching.Studying this course has increased my confidence.
+                  - generic [ref=f1e153]:
+                    - generic [ref=f1e154]: 
+                    - generic [ref=f1e155]: 
+                    - generic [ref=f1e156]: 
+                    - generic [ref=f1e157]: 
+                    - generic [ref=f1e158]: 
+                - generic [ref=f1e162]:
+                  - text: 
+                  - heading "Gruffydd Dickerson" [level=4] [ref=f1e163]
+                  - generic [ref=f1e164]: Student of software testing
+                  - generic [ref=f1e165]: Guys,I was a Nervous newbie in this software testing few days ago, but by just completing my 50% course, I am now confident becoz of knowledge shared by Rahul shetty sir, that i will crack the job of Software Test Engineer. I was 0 in Technical field,but now i can say i have some rare knowledge which will help me to deal with my goals and challenges in testing. Trying my level best to explore more n more in testing due to CURIOSITY ABOUT SOFTWARE TESTING created in my mind by Rahul sir's Guidance.Thank You sir.
+                  - generic [ref=f1e166]:
+                    - generic [ref=f1e167]: 
+                    - generic [ref=f1e168]: 
+                    - generic [ref=f1e169]: 
+                    - generic [ref=f1e170]: 
+                    - generic [ref=f1e171]: 
+                - generic [ref=f1e175]:
+                  - text: 
+                  - heading "Jesse Shepard" [level=4] [ref=f1e176]
+                  - generic [ref=f1e177]: student of selenium
+                  - generic [ref=f1e178]: I am so glad I found the right course and the right instructor. The instructor is too good..knowledgeable and supportive. I always get replies on my queries within hours and that helps me become productive.And this shows the dedication of the instructor as well. Very commendable and exceptional and elaborate teaching.Studying this course has increased my confidence.
+                  - generic [ref=f1e179]:
+                    - generic [ref=f1e180]: 
+                    - generic [ref=f1e181]: 
+                    - generic [ref=f1e182]: 
+                    - generic [ref=f1e183]: 
+                    - generic [ref=f1e184]: 
+                - generic [ref=f1e188]:
+                  - text: 
+                  - heading "Zubair Rowley" [level=4] [ref=f1e189]
+                  - generic [ref=f1e190]: Student of software testing
+                  - generic [ref=f1e191]: Guys, I was a Nervous newbie in this software testing few days ago, but by just completing my 50% course, I am now confident becoz of knowledge shared by Rahul shetty sir, that i will crack the job of Software Test Engineer. I was 0 in Technical field, but now i can say i have some rare knowledge which will help me to deal with my goals and challenges in testing. Trying my level best to explore more n more in testing due to CURIOSITY ABOUT SOFTWARE TESTING created in my mind by Rahul sir's Guidance.Thank You sir.
+                  - generic [ref=f1e192]:
+                    - generic [ref=f1e193]: 
+                    - generic [ref=f1e194]: 
+                    - generic [ref=f1e195]: 
+                    - generic [ref=f1e196]: 
+                    - generic [ref=f1e197]: 
+                - generic [ref=f1e201]:
+                  - text: 
+                  - heading "Sania Wynn" [level=4] [ref=f1e202]
+                  - generic [ref=f1e203]: student of selenium
+                  - generic [ref=f1e204]: I am so glad I found the right course and the right instructor. The instructor is too good..knowledgeable and supportive. I always get replies on my queries within hours and that helps me become productive. And this shows the dedication of the instructor as well. Very commendable and exceptional and elaborate teaching.Studying this course has increased my confidence.
+                  - generic [ref=f1e205]:
+                    - generic [ref=f1e206]: 
+                    - generic [ref=f1e207]: 
+                    - generic [ref=f1e208]: 
+                    - generic [ref=f1e209]: 
+                    - generic [ref=f1e210]: 
+                - generic [ref=f1e214]:
+                  - text: 
+                  - heading "Gruffydd Dickerson" [level=4] [ref=f1e215]
+                  - generic [ref=f1e216]: Student of software testing
+                  - generic [ref=f1e217]: Guys,I was a Nervous newbie in this software testing few days ago, but by just completing my 50% course, I am now confident becoz of knowledge shared by Rahul shetty sir, that i will crack the job of Software Test Engineer. I was 0 in Technical field,but now i can say i have some rare knowledge which will help me to deal with my goals and challenges in testing. Trying my level best to explore more n more in testing due to CURIOSITY ABOUT SOFTWARE TESTING created in my mind by Rahul sir's Guidance.Thank You sir.
+                  - generic [ref=f1e218]:
+                    - generic [ref=f1e219]: 
+                    - generic [ref=f1e220]: 
+                    - generic [ref=f1e221]: 
+                    - generic [ref=f1e222]: 
+                    - generic [ref=f1e223]: 
+                - generic [ref=f1e227]:
+                  - text: 
+                  - heading "Jesse Shepard" [level=4] [ref=f1e228]
+                  - generic [ref=f1e229]: student of selenium
+                  - generic [ref=f1e230]: I am so glad I found the right course and the right instructor. The instructor is too good..knowledgeable and supportive. I always get replies on my queries within hours and that helps me become productive.And this shows the dedication of the instructor as well. Very commendable and exceptional and elaborate teaching.Studying this course has increased my confidence.
+                  - generic [ref=f1e231]:
+                    - generic [ref=f1e232]: 
+                    - generic [ref=f1e233]: 
+                    - generic [ref=f1e234]: 
+                    - generic [ref=f1e235]: 
+                    - generic [ref=f1e236]: 
+              - text:  
+          - generic [ref=f1e237]:
+            - generic [ref=f1e239]:
+              - heading "Featured Courses" [level=2] [ref=f1e241]
+              - generic [ref=f1e242]: Dollar($) Rupee(₹)
+            - link "VIEW ALL COURSES" [ref=f1e247] [cursor=pointer]:
+              - /url: https://courses.rahulshettyacademy.com/courses
+        - generic [ref=f1e250]:
+          - generic [ref=f1e251]:
+            - heading "JOIN OUR ACADEMY" [level=2] [ref=f1e252]
+            - generic [ref=f1e253]: Sign up today and get access to "Core Java for Testers" & "QA Resume Preparation" Courses for FREE.
+          - link "JOIN NOW" [ref=f1e256] [cursor=pointer]:
+            - /url: https://courses.rahulshettyacademy.com/sign_up
+        - contentinfo [ref=f1e257]:
+          - generic [ref=f1e260]:
+            - generic [ref=f1e262]:
+              - text: All Right Reserved
+              - link "RahulShettyAcademy" [ref=f1e263] [cursor=pointer]:
+                - /url: "#"
+              - text: © 2026
+            - list [ref=f1e265]:
+              - listitem [ref=f1e266]:
+                - link "About Us" [ref=f1e267] [cursor=pointer]:
+                  - /url: /about-my-mission
+              - listitem [ref=f1e268]:
+                - link "Contact Us" [ref=f1e269] [cursor=pointer]:
+                  - /url: contact-us
+              - listitem [ref=f1e270]:
+                - link "Privacy Policy" [ref=f1e271] [cursor=pointer]:
+                  - /url: /privacy
+        - text: 
+  - table [ref=e180]:
+    - rowgroup [ref=e181]:
+      - row [ref=e182]:
+        - cell [ref=e183]:
+          - list [ref=e184]:
+            - listitem [ref=e185]:
+              - heading [level=3] [ref=e186]:
+                - link "Discount Coupons" [ref=e187] [cursor=pointer]:
+                  - /url: "#"
+            - listitem [ref=e188]:
+              - link "REST API" [ref=e189] [cursor=pointer]:
+                - /url: http://www.restapitutorial.com/
+            - listitem [ref=e190]:
+              - link "SoapUI" [ref=e191] [cursor=pointer]:
+                - /url: https://www.soapui.org/
+            - listitem [ref=e192]:
+              - link "Appium" [ref=e193] [cursor=pointer]:
+                - /url: https://courses.rahulshettyacademy.com/p/appium-tutorial
+            - listitem [ref=e194]:
+              - link "JMeter" [ref=e195] [cursor=pointer]:
+                - /url: https://jmeter.apache.org/
+        - cell [ref=e196]:
+          - list [ref=e197]:
+            - listitem [ref=e198]:
+              - heading [level=3] [ref=e199]:
+                - link "Latest News" [ref=e200] [cursor=pointer]:
+                  - /url: "#"
+            - listitem [ref=e201]:
+              - link "Broken Link" [ref=e202] [cursor=pointer]:
+                - /url: https://rahulshettyacademy.com/brokenlink
+            - listitem [ref=e203]:
+              - link "Dummy Content for Testing." [ref=e204] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e205]:
+              - link "Dummy Content for Testing." [ref=e206] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e207]:
+              - link "Dummy Content for Testing." [ref=e208] [cursor=pointer]:
+                - /url: "#"
+        - cell [ref=e209]:
+          - list [ref=e210]:
+            - listitem [ref=e211]:
+              - heading [level=3] [ref=e212]:
+                - link "Contact info" [ref=e213] [cursor=pointer]:
+                  - /url: "#"
+            - listitem [ref=e214]:
+              - link "Dummy Content for Testing." [ref=e215] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e216]:
+              - link "Dummy Content for Testing." [ref=e217] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e218]:
+              - link "Dummy Content for Testing." [ref=e219] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e220]:
+              - link "Dummy Content for Testing." [ref=e221] [cursor=pointer]:
+                - /url: "#"
+        - cell [ref=e222]:
+          - list [ref=e223]:
+            - listitem [ref=e224]:
+              - heading [level=3] [ref=e225]:
+                - link "Social Media" [ref=e226] [cursor=pointer]:
+                  - /url: "#"
+            - listitem [ref=e227]:
+              - link "Facebook" [ref=e228] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e229]:
+              - link "Twitter" [ref=e230] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e231]:
+              - link "Google+" [ref=e232] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e233]:
+              - link "Youtube" [ref=e234] [cursor=pointer]:
+                - /url: "#"
+  - generic [ref=e235]:
+    - text: © 2019 Powered by
+    - strong [ref=e236]:
+      - link "Medianh Consulting" [ref=e237] [cursor=pointer]:
+        - /url: http://www.medianhconsulting.com
+  - status [ref=e238]
+```
